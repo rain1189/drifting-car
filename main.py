@@ -30,7 +30,7 @@ while running:
         if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_UP:
                 car_v_x += car_a * math.cos(math.radians(car_r))
-                car_v_y += car_a * math.sin(math.radians(car_r))gig
+                car_v_y += car_a * math.sin(math.radians(car_r))
         # QUIT 타입의 이벤트라면 다음 코딩을 실행
         if event.type == pygame.QUIT:
             # 메인 루프를 탈출하기 위해 변수를 False 로 바꾼다.
