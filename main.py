@@ -3,6 +3,8 @@ import math
 
 # 파이게임 모듈 초기화
 pygame.init()
+clock = pygame.time.Clock()
+
 # 로고 로드하고 세팅
 logo = pygame.image.load("logo.jpg")
 pygame.display.set_icon(logo)
@@ -32,6 +34,8 @@ running = True
 
 # 메인 루프
 while running:
+    df = clock.tick(60)
+    
     keys = pygame.key.get_pressed()
     if keys[pygame.K_UP]:
         car['v']['x'] += car['a'] * math.cos(math.radians(car['r']))
