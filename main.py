@@ -6,6 +6,8 @@ BLACK = (0, 0, 0)
 
 # 파이게임 모듈 초기화
 pygame.init()
+clock = pygame.time.Clock()
+
 # 로고 로드하고 세팅
 logo = pygame.image.load("logo.jpg")
 pygame.display.set_icon(logo)
