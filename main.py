@@ -6,9 +6,7 @@ BLACK = (0, 0, 0)
 
 # 파이게임 모듈 초기화
 pygame.init()
-clock = pygame.time.Clock()
-
-# 창 설정
+# 로고 로드하고 세팅
 logo = pygame.image.load("logo.jpg")
 pygame.display.set_icon(logo)
 pygame.display.set_caption("Drifting Car")
@@ -49,7 +47,6 @@ running = True
 
 # 메인 루프
 while running:
-    # 화살표들 누르고 있는지
     keys = pygame.key.get_pressed()
     if keys[pygame.K_UP]:
         car.v_x += car.a * math.cos(math.radians(car.r))
